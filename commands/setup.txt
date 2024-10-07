@@ -1,0 +1,19 @@
+cd backend
+
+py -3 -m venv <venv_name>
+<venv_name> \Scripts\Activate
+
+pip fastapi
+pip uvicorn
+pip install -r requirements.txt
+
+Select Interpreter Path:
+Enter Interpreter Path -> venv1 -> python.exe
+
+
+uvicorn main:app -reload
+
+
+If Error: 
+pip uninstall pydantic pydantic_core
+pip install pydantic pydantic_core
